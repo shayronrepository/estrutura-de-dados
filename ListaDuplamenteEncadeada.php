@@ -60,7 +60,7 @@ class ListaDuplamenteEncadeada
         $this->tamanho++;
     }
 
-    public function addAtPosition($data, $posicao) {
+    public function addNaPosicao($data, $posicao) {
         $novoNode = new Nodo($data); // cria um novo nó com valor.
 
         // Se a lista estiver vazia e a posição for 0, adicione o nó no início
@@ -151,10 +151,10 @@ class ListaDuplamenteEncadeada
 
 $lista = new ListaDuplamenteEncadeada();
 
-$lista->addAtPosition('1', 0);
-$lista->addAtPosition('3', 1);
-$lista->addAtPosition('2', 0);
-$lista->addAtPosition('4', 1);
+$lista->addNaPosicao('1', 0);
+$lista->addNaPosicao('3', 1);
+$lista->addNaPosicao('2', 0);
+$lista->addNaPosicao('4', 1);
 
 ?>
 
